@@ -1,0 +1,85 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+#game {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #343a40;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+    background-color: #6c757d;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #6c757d;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cell:hover {
+    background-color: #adb5bd;
+}
+
+#status {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: #495057;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+#restart {
+    background-color: #28a745;
+}
+
+#restart:hover {
+    background-color: #218838;
+}
+
+#playComputer {
+    background-color: #007bff;
+}
+
+#playComputer:hover {
+    background-color: #0069d9;
+}
